@@ -574,6 +574,74 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* --------------------------------------- */
+/* ----- Releases ----- */
+/* --------------------------------------- */
+
+.releases__box {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .releases__box {
+        align-items: initial;
+        flex-direction: column-reverse;
+    }
+}
+
+.releases__box:not(:last-child) {
+    margin-bottom: 25rem;
+}
+
+@media(max-width: 500px) {
+    .releases__box:not(:last-child) {
+        margin-bottom: 20rem;
+    }
+}
+
+.releases__links {
+    display: flex;
+    align-items: center;
+}
+
+.releases__text {
+    flex: 0 0 30%;
+}
+
+.releases__list {
+    /* list-style-type: square; */
+    list-style-position: inside;
+    margin-bottom: var(--gutter-normal);
+}
+
+.releases__code {
+    display: block;
+    height: 3rem;
+    margin-left: var(--gutter-normal);
+    transition: all .3s;
+}
+
+.releases__code:hover {
+    transform: scale(1.2);
+}
+
+.releases__image-box {
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(min-width: 901px) {
+    .releases__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .releases__code {
+        height: 4rem;
+    }
+}
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
